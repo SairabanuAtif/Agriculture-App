@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.triocodes.krishikkaran.Fragment.LoginFragment"
+    android:focusable="true" android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/edittext_login_mobile"
+        style="@style/MarginTop_one"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_above="@+id/edittext_login_password"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/mobile"
+        android:inputType="phone"
+        android:lines="1"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edittext_login_password"
+        style="@style/MarginTop_one"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edittext_login_password"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.triocodes.krishikkaran.Fragment.FeedbackFragment"
+    android:background="@color/colorBackground">
+
+
+    <EditText
+        android:id="@+id/edittext_feedback_name"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/name"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/edittext_feedback_email"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/email"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edittext_feedback_phone"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/mobile"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/edittext_feedback_message"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:paddingLeft="@dimen/edit_text_padding_left"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/message"
+        android:lines="10"
+        android:scrollHorizontally="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorDarkGreen"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textCapSentences"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MarginTop"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/ext_amount"
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDarkGreen" />
+
+        <TextView
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/text_button_feedback_send"
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:padding="@dimen/text_search_padding"
+            android:text="@string/send"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

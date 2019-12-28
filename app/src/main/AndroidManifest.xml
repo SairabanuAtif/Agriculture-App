@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.triocodes.krishikkaran" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.BidProductClickActivity"
+            android:label="@string/title_activity_bid_product_click"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.ModifyClickActivity"
+            android:label="@string/title_activity_modify_click"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.BidListActivity"
+            android:label="@string/title_activity_bid_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.BarterProductClickActivity"
+            android:label="@string/title_activity_barter_product_click"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.BidYourProductClickActivity"
+            android:label="@string/title_activity_bid_your_product_click"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0845581934589291aae87f46dd9c5443df5cd7b7" />
+
+        <activity
+            android:name=".Activity.VegetablesAvtivity"
+            android:label="@string/title_activity_vegetables_avtivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.FruitsActivity"
+            android:label="@string/title_activity_fruits"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.SpicesActivity"
+            android:label="@string/title_activity_spices"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.SeedsAndPlantsActivity"
+            android:label="@string/title_activity_seeds_and_plants"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.FlowersActivity"
+            android:label="@string/title_activity_flowers"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.HerbsAndCerealsActivity"
+            android:label="@string/title_activity_herbs_and_cereals"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.DairyProductsActivity"
+            android:label="@string/title_activity_dairy_products"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.AnimalsActivity"
+            android:label="@string/title_activity_animals"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.EquipmentsActivity"
+            android:label="@string/title_activity_equipments"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.HandloomActivity"
+            android:label="@string/title_activity_handloom"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.LandForSaleActivity"
+            android:label="@string/title_activity_land_for_sale"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity.OthersActivity"
+            android:label="@string/title_activity_others"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

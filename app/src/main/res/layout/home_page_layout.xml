@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5">
+
+                <ImageView
+                    android:id="@+id/home_vegetables"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/vegetable"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+
+                <ImageView
+                    android:id="@+id/home_fruits"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/fruits"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:paddingTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_spices"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/spices"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+
+                <ImageView
+                    android:id="@+id/home_seeds_and_plants"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/seedsandplants"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:paddingTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_flowers"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/flowers"
+                    />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+                <ImageView
+                    android:id="@+id/home_herbs_and_cereals"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/herbandcereals"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:paddingTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_dairy_products"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/diary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+                <ImageView
+                    android:id="@+id/home_animal"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/animals"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:paddingTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_equipments"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/equipments"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+                <ImageView
+                    android:id="@+id/home_handloom"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/handloom"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:paddingTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_land_for_sale"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/land4sale"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="6dp" />
+                <ImageView
+                    android:id="@+id/home_others"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/others"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

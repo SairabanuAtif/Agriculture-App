@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarBarterProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Herbs And Cereals"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipeRefreshHerbsCereals"
+        android:layout_width="match_parent"
+        android:background="@color/colorBackground"
+        android:layout_height="match_parent"
+        tools:context="com.triocodes.handyman.Fragment.RequestViewFragment">
+
+        <ListView
+            android:id="@+id/list_herbs_cereals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_no_herbs"
+            android:padding="@dimen/text_view_width">
+
+            <ImageView
+                android:id="@+id/image_product_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/noimage" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_view_width"
+                android:paddingTop="@dimen/text_view_width">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Sorry"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorDarkGreen" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="No products under Herbs and Cereals"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

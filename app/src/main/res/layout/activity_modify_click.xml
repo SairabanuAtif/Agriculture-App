@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/modifyClick"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ScrollView
+            android:id="@+id/scrollview_modify"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_modify"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:focusable="true" android:focusableInTouchMode="true">
+
+
+                    <EditText
+                        android:id="@+id/edittext_modify_product_product_name"
+                        style="@style/MarginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spinner_height"
+                        android:background="@drawable/border_edittext"
+                        android:ellipsize="end"
+                        android:hint="@string/product_name"
+                        android:inputType="textCapSentences"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/edit_text_padding_left"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGreen"
+                        android:textColorHint="@color/colorPrimaryDark" />
+                    <LinearLayout
+                        style="@style/MarginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="6dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Category"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  :  "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/text_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not Updated"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/edittext_modify_product_total_quantity"
+                        style="@style/MarginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spinner_height"
+                        android:background="@drawable/border_edittext"
+                        android:ellipsize="end"
+                        android:hint="@string/total_quantity"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/edit_text_padding_left"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGreen"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        style="@style/MarginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="6dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Quantity Unit"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  :  "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/text_quantity_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not Updated"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edittext_modify_product_amount_per_unit"
+                        style="@style/MarginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spinner_height"
+                        android:background="@drawable/border_edittext"
+                        android:ellipsize="end"
+                        android:hint="@string/amount_per_unit"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/edit_text_padding_left"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorDarkGreen"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        style="@style/MarginTop">
+
+                        <TextView
+                            android:id="@+id/text_button_modify_product_upload_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:padding="@dimen/text_search_padding"
+                            android:text="@string/upload_image"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/image_modify_product"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="@dimen/activity_horizontal_margin"
+                            android:scaleType="fitXY"></ImageView>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/linear_layout_modify"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:weightSum="3.4">
+
+
+                    <TextView
+                        android:id="@+id/text_button_modify_product_save"
+                        android:layout_width="@dimen/fab_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/save"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:id="@+id/text_button_modify_product_cancel"
+                        android:layout_width="@dimen/fab_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/cancel"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+
+                    <TextView
+                        android:id="@+id/text_button_modify_product_barter"
+                        android:layout_width="@dimen/fab_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/barter"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>
+

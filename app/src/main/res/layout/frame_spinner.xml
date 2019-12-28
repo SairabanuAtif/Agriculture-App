@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/underline_weight"
+    android:background="@color/colorTransparent">
+
+    <TextView
+        android:id="@+id/txt_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="item"
+        android:textColor="@color/colorDarkGreen"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</LinearLayout>

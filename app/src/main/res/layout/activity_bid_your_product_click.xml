@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarBidDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Bid This Product"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ScrollView
+            android:id="@+id/scrollview_modify"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+            <LinearLayout
+                android:id="@+id/linear_layout_bid_your_product_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:focusable="true" android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    style="@style/MarginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/product_code"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/text_bid_your_product_product_code"
+                        android:layout_width="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:text="Not Updated"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MarginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                   >
+
+                    <TextView
+                        android:layout_width="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/product_name"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/text_bid_your_product_product_name"
+                        android:layout_width="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:text="Not Updated"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+                <EditText
+                    style="@style/MarginTop"
+                    android:id="@+id/edittext_bid_your_product_min_bid_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:editable="true"
+                    android:paddingLeft="@dimen/edit_text_padding_left"
+                    android:ellipsize="end"
+                    android:hint="@string/min_bid_amount"
+                    android:lines="1"
+                    android:background="@drawable/border_edittext"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:inputType="numberDecimal"/>
+
+                <EditText
+                    style="@style/MarginTop"
+                    android:id="@+id/edittext_bid_your_product_closing_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:ellipsize="end"
+                    android:hint="Bid closing day"
+                    android:editable="false"
+                    android:paddingLeft="@dimen/edit_text_padding_left"
+                    android:lines="1"
+                    android:background="@drawable/border_edittext"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linear_layout_bid_your_product_click"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:weightSum="4.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/text_button_bid_your_products_add"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/add"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:id="@+id/text_button_bid_your_products_cancel"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/cancel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+
+
+            </LinearLayout>
+          </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+

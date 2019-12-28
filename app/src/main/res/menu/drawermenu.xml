@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/nav_item_catagory"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+    <item android:title="All Products"
+        android:id="@+id/nav_item_all_products"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+    <item android:title="Add Products"
+        android:id="@+id/nav_item_add_products"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+    <item android:title="Your Requirements"
+        android:id="@+id/nav_item_your_requirements"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+   <!-- <item android:title="Your Products"
+        android:id="@+id/nav_item_your_products"
+        android:icon="@mipmap/krishikkaran_icon"/>-->
+
+    <item android:title="Bid"
+        android:id="@+id/nav_item_bid"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+    <item android:title="Barter"
+        android:id="@+id/nav_item_barter"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+    <item android:title="Feedback"
+        android:id="@+id/nav_item_feedback"
+        android:icon="@mipmap/krishikkaran_icon"/>
+
+
+    <!-- <group android:id="@+id/group_others">
+
+         <item android:title="History"
+             android:icon="@mipmap/ic_launcher"/>
+         <item android:title="Events"
+             android:icon="@mipmap/ic_launcher"/>
+         <item android:title="Contact us"
+             android:icon="@mipmap/ic_launcher"/>
+     </group>-->
+</menu>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.triocodes.krishikkaran.Fragment.AddProductTabFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview_modify"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_add_product"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edittext_add_product_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:paddingLeft="@dimen/edit_text_padding_left"
+                    style="@style/MarginTop"
+                    android:background="@drawable/border_edittext"
+                    android:ellipsize="end"
+                    android:hint="@string/product_name"
+                    android:inputType="textCapSentences"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <TextView
+                    style="@style/MarginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Category"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                     />
+
+                <Spinner
+                    android:id="@+id/spinner_add_product_catagory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:background="@drawable/border_spinner"
+                    android:drawSelectorOnTop="true"
+                    android:textColor="@color/colorDarkGreen" />
+
+                <EditText
+                    android:id="@+id/edittext_add_product_total_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:paddingLeft="@dimen/edit_text_padding_left"
+                    style="@style/MarginTop_one"
+                    android:background="@drawable/border_edittext"
+                    android:ellipsize="end"
+                    android:hint="@string/total_quantity"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <TextView
+                    style="@style/MarginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Quantity Unit"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner_add_product_quantity_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:background="@drawable/border_spinner"
+                    android:drawSelectorOnTop="true"
+                    android:textColor="@color/colorDarkGreen" />
+
+                <EditText
+                    android:id="@+id/edittext_add_product_amount_per_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinner_height"
+                    android:paddingLeft="@dimen/edit_text_padding_left"
+                    style="@style/MarginTop_one"
+                    android:background="@drawable/border_edittext"
+                    android:ellipsize="end"
+                    android:hint="@string/amount_per_unit"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/text_button_add_product_upload_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:padding="@dimen/text_search_padding"
+                        android:text="@string/upload_image"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image_add_product"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:scaleType="fitXY"></ImageView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linear_layout_add_product"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:weightSum="3.4">
+
+                <TextView
+                    android:id="@+id/text_button_add_product_save"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/save"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:id="@+id/text_button_add_product_cancel"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/cancel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+
+                <TextView
+                    android:id="@+id/text_button_add_product_barter"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/barter"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

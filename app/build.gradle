@@ -1,0 +1,63 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.triocodes.krishikkaran"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.github.traex.rippleeffect:library:1.3'//ripple
+    compile 'me.neavo:volley:2014.12.09'//volley
+    compile 'cn.pedant.sweetalert:library:1.3'//sweetalert
+    compile 'com.daimajia.easing:library:1.0.1@aar'//sweetalert
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'//sweetalert
+    compile 'com.nineoldandroids:library:2.4.0'//sweetalert
+
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'//picasso
+
+    compile 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+   // compile 'org.hybridsquad.android.photocropper:library:2.1.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.1@aar') {
+        transitive = true;
+    }
+
+
+
+
+}

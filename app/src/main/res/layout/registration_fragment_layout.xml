@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.triocodes.krishikkaran.Fragment.RegistrationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_register_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:hint="@string/name"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+
+            <EditText
+                android:id="@+id/edittext_register_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:hint="@string/address"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/edittext_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/edittext_register_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/edittext_register_land_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:hint="@string/land_number"
+                android:inputType="number"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <TextView
+                style="@style/MarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select State"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_register_state"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:background="@drawable/border_spinner"
+                android:textColor="@color/colorDarkGreen"></Spinner>
+            <TextView
+                style="@style/MarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select District"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_register_district"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:background="@drawable/border_spinner"
+                android:textColor="@color/colorDarkGreen"></Spinner>
+            <TextView
+                style="@style/MarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Place"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_register_post_office"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:background="@drawable/border_spinner"
+                android:textColor="@color/colorDarkGreen"></Spinner>
+
+            <AutoCompleteTextView
+                android:id="@+id/edittext_register_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/location"
+                android:inputType="textCapSentences"
+                android:lines="3"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/edittext_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingLeft="@dimen/edit_text_padding_left"
+                style="@style/MarginTop_one"
+                android:background="@drawable/border_edittext"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/text_register_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:padding="@dimen/text_search_padding"
+                    android:text="@string/upload_image"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_register"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:scaleType="fitXY">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_register"
+                style="@style/MarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:padding="@dimen/button_padding"
+                android:text="@string/register"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
